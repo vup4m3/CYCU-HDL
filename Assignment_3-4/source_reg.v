@@ -1,9 +1,7 @@
 module Source_Reg(
   input clk,
   input [23:0] wdata,
-  input aluop_st,
   input cap_en,
-  output reg alu_en;
   output [23:0] out_data
 );
 
@@ -28,10 +26,6 @@ always @(posedge clk ) begin
     else if(addr==6 )reg_6<=wdata;
     else if(addr==7 )reg_7<=wdata;
   end
-end
-
-always @( posedge clk ) begin
-  alu_en<=aluop_st;
 end
 
 always @( posedge clk ) begin

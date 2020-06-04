@@ -1,13 +1,11 @@
 module ALU(
   input clk,
-  input [2:0] addr,
   input [7:0]a,
   input [7:0]b,
   input [2:0]sel,
   input alu_en,
-  output [2:0] addr,
   output [7:0] out,
-  output out_en
+  output reg out_en
 );
 
 reg [11:0] tmp;
@@ -15,9 +13,7 @@ reg [11:0] u_shift_a, shift_a, u_shift_b, shift_b, shift_a6;
 
 
 always @(posedge clk) begin
-  if (alu_en == 0)
-    ;
-  else if (sel == 0) begin
+  if (sel == 0) begin
     tmp <= {a[7], a} + {b[7], b};
     out <= tmp[8:1];
   end
@@ -40,12 +36,24 @@ always @(posedge clk) begin
     out <= tmp[10:3];
   end
   else if (sel == 6) begin
+    shift_a6 <= {{3{a[7]}}, a} + {{3{b[7]}}, b};
+    tmp <= shift_a6 * 3;
+    out <= tmp[10:3];
+  end
+  else if (sel == 7) begin
     temp <= a * 6;
     shift_b <= b >> 2;
     temp <= temp + b;
     out <= tmp[10:3];
   end
     
+end
+
+always @(posedge clk) begin
+  if (alu_en == 1)
+    out_en <= 1;
+  else 
+    out_en <= 0;
 end
 
 endmodule // ALU
