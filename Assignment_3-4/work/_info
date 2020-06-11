@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\USER\Desktop\HDL\Assignment_3-4
+vALU
+IiAlF[@K5g7SNz6bPB00Z51
+VA^TfMh@PRDjUUgDC3R^?C3
+w1591872753
+8C:/Users/USER/Desktop/HDL/Assignment_3-4/alu.v
+FC:/Users/USER/Desktop/HDL/Assignment_3-4/alu.v
+L0 1
+Z1 OV;L;6.4a;39
+r1
+31
+Z2 o-work work -O0
+n@a@l@u
+!s100 0WYo`RF>ILz74P1e0@lMT0
+!s85 0
+vDestination_Reg
+IPD<aDFKg41U<BO>z[lz0k1
+V0kX[lL4Wm7T47J^[hnmR71
+w1591868871
+8C:/Users/USER/Desktop/HDL/Assignment_3-4/dest_reg.v
+FC:/Users/USER/Desktop/HDL/Assignment_3-4/dest_reg.v
+L0 1
+R1
+r1
+31
+R2
+n@destination_@reg
+!s100 A:UdmmRBZWOZZ327<2NUD0
+!s85 0
+vSbapd
+I5ohM0^`lmQ2O?[ZboO0Zd2
+V^XY4CJ:jaiKK@On5hiKc60
+w1591873062
+8C:/Users/USER/Desktop/HDL/Assignment_3-4/sbapd.v
+FC:/Users/USER/Desktop/HDL/Assignment_3-4/sbapd.v
+L0 1
+R1
+r1
+31
+R2
+n@sbapd
+!s100 ;=79<TzfeeLPTeVlRjM3l2
+!s85 0
+vSource_Reg
+I8K<oQzF_EQF_gnoz?VJa^2
+V@[S5EzfazFhK<zhLC?lbX3
+w1591873212
+8C:/Users/USER/Desktop/HDL/Assignment_3-4/source_reg.v
+FC:/Users/USER/Desktop/HDL/Assignment_3-4/source_reg.v
+L0 1
+R1
+r1
+31
+R2
+n@source_@reg
+!s100 8e7jVHYeAAbIS6@FOZX<91
+!s85 0
+vSpi_Ctrl
+Il]d9ZWaTEK]1cz0Pe[bAC2
+VZ;Od9aOJG:N7FJc4dkh712
+w1591869324
+8C:/Users/USER/Desktop/HDL/Assignment_3-4/spi_ctrl.v
+FC:/Users/USER/Desktop/HDL/Assignment_3-4/spi_ctrl.v
+L0 1
+R1
+r1
+31
+R2
+n@spi_@ctrl
+!s100 K7R`onXSP5_K__?VAK@Sn1
+!s85 0
+vTM
+!s100 <Zb71mF5DmH9UljEPl@hK0
+I@^>zEeE3aIPoGk38S_Pi41
+V[Ql>?Rm1X2VbNR1SFDJ:i2
+w1591870757
+8C:/Users/USER/Desktop/HDL/Assignment_3-4/TM.v
+FC:/Users/USER/Desktop/HDL/Assignment_3-4/TM.v
+L0 3
+R1
+r1
+!s85 0
+31
+R2
+n@t@m

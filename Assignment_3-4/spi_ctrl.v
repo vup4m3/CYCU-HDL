@@ -4,7 +4,7 @@ module Spi_Ctrl(
   input [23:0]spi_wdata,
   input aluop_st,
   input rst,
-  output [23:0] spi_out,
+  output reg [23:0] spi_out,
   output reg alu_en,
   output reg cap_en
 );
@@ -39,7 +39,7 @@ always@( posedge cap_en)begin
   spi_out<=shift_reg;
 end
 
-always @( posedge ) begin
+always @( posedge spi_clk) begin
   alu_en<=aluop_st;
 end
 

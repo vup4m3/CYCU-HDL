@@ -2,18 +2,15 @@ module Source_Reg(
   input clk,
   input [23:0] wdata,
   input cap_en,
-  output [23:0] out_data
+  input alu_en,
+  output reg [23:0] out_data
 );
 
 // [23]R, [22]C, [21:19]Addr, [18:16]Cmd, [15:8]a, [7:0]b
-reg [2:0] addr;
+reg [2:0] addr, addrtmp;
 reg [3:0] cnt;
 // reg hold;
-reg [23:0] reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_5, reg_6, reg_7;
-
-always @( posedge cap_en ) begin
-  addr<=wdata[21:19];
-end
+reg [23:0] reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_6, reg_7; 
 
 always @(posedge clk ) begin
   if (cap_en)begin
@@ -26,6 +23,13 @@ always @(posedge clk ) begin
     else if(addr==6 )reg_6<=wdata;
     else if(addr==7 )reg_7<=wdata;
   end
+end
+
+
+always @(posedge clk) begin
+  addrtmp <=  wdata[21:19];
+  if (cap_en)
+    addr <= addrtmp;
 end
 
 always @( posedge clk ) begin
@@ -42,7 +46,10 @@ always @( posedge clk ) begin
 
     cnt<=cnt+1;
     
+    
   end
+
+  
   else if( cnt==8 ) cnt<=cnt;
   
 end

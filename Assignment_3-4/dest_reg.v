@@ -3,7 +3,7 @@ module Destination_Reg(
   input [7:0] wdata,
   input [2:0] addr,
   input clk,
-  output reg [7:0] reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_5, reg_6, reg_7
+  output reg [7:0] reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_6, reg_7
 );
 
 always @(posedge clk) begin
