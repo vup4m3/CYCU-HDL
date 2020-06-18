@@ -1,0 +1,145 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\USER\Desktop\HDL\Final
+vALU
+IL_nNBJjT];M_^X=WW_idk2
+VA^TfMh@PRDjUUgDC3R^?C3
+w1592472127
+8C:/Users/USER/Desktop/HDL/Final/alu.v
+FC:/Users/USER/Desktop/HDL/Final/alu.v
+L0 1
+Z1 OV;L;6.4a;39
+r1
+31
+Z2 o-work work -O0
+n@a@l@u
+!s100 D=oQXDHQPMOB`hQ2ZD2ad1
+!s85 0
+vCounter
+IAV8oV<8iNzUMeB=co21L_0
+VLl2`K:7hg`9W5DKDB902g1
+w1592475193
+8C:/Users/USER/Desktop/HDL/Final/Counter.v
+FC:/Users/USER/Desktop/HDL/Final/Counter.v
+L0 1
+R1
+r1
+31
+R2
+n@counter
+!s100 ^OoA[m:Y6MJ8Cb3?8T9XC2
+!s85 0
+vDestination_Reg
+IPD<aDFKg41U<BO>z[lz0k1
+V0kX[lL4Wm7T47J^[hnmR71
+w1591868871
+8C:/Users/USER/Desktop/HDL/Final/dest_reg.v
+FC:/Users/USER/Desktop/HDL/Final/dest_reg.v
+L0 1
+R1
+r1
+31
+R2
+n@destination_@reg
+!s100 A:UdmmRBZWOZZ327<2NUD0
+!s85 0
+vDestination_Reg16
+IP7Q4400Je^CVn9A^<Q`2c3
+VMJNATBk2maF?o2Q]ETHJ>2
+w1592477671
+8C:/Users/USER/Desktop/HDL/Final/dest16.v
+FC:/Users/USER/Desktop/HDL/Final/dest16.v
+L0 1
+R1
+r1
+31
+R2
+n@destination_@reg16
+!s100 I_ODbihF`88]R1Q5CAb362
+!s85 0
+vMAC
+I_WFEfE6T0KnjO[o87WiW10
+VNR_:oZCPViA^J30hCYO`U3
+w1592478103
+8C:/Users/USER/Desktop/HDL/Final/mac.v
+FC:/Users/USER/Desktop/HDL/Final/mac.v
+L0 1
+R1
+r1
+31
+R2
+n@m@a@c
+!s100 8IUj:Vn99]jP0X9I[b;:M0
+!s85 0
+vSbapd
+IWehSTAQ[J]e^<4nC`nOTM1
+VQdnR6EVi_Pj7R:T3dkTze2
+w1592478275
+8C:/Users/USER/Desktop/HDL/Final/sbapd.v
+FC:/Users/USER/Desktop/HDL/Final/sbapd.v
+L0 1
+R1
+r1
+31
+R2
+n@sbapd
+!s100 c?fN]FT;55Z[2:MBklm1M3
+!s85 0
+vSource_Reg
+I3`BI4mB]nDHjbSIj^@CS91
+V@[S5EzfazFhK<zhLC?lbX3
+w1592471504
+8C:/Users/USER/Desktop/HDL/Final/source_reg.v
+FC:/Users/USER/Desktop/HDL/Final/source_reg.v
+L0 1
+R1
+r1
+31
+R2
+n@source_@reg
+!s100 fSRHi[XH]FeGN@B]_g9hM0
+!s85 0
+vSpi_Ctrl
+IC11dk@kghnllmRheD4Hml1
+VD4giMLAcB_5DH:TjdL5Jg0
+w1592477693
+8C:/Users/USER/Desktop/HDL/Final/spi_ctrl.v
+FC:/Users/USER/Desktop/HDL/Final/spi_ctrl.v
+L0 1
+R1
+r1
+31
+R2
+n@spi_@ctrl
+!s100 ER8;hlXbTk<ffgK`ilQO61
+!s85 0
+vTM
+!s100 7e]`>LDDMN5QZzhWC=Z`j2
+IoZY6OI^kPn4IG7?3DbDKQ3
+V[Ql>?Rm1X2VbNR1SFDJ:i2
+w1592478309
+8C:/Users/USER/Desktop/HDL/Final/TM.v
+FC:/Users/USER/Desktop/HDL/Final/TM.v
+L0 3
+R1
+r1
+!s85 0
+31
+R2
+n@t@m
+vTwenty_Bit_Reg
+IQi>YFhWTzlGI?eE0PUTPA1
+Vz3Xb1f6o1>NSV1h:?_9Y30
+w1592476508
+8C:/Users/USER/Desktop/HDL/Final/Twenty_Bit_Reg.v
+FC:/Users/USER/Desktop/HDL/Final/Twenty_Bit_Reg.v
+L0 1
+R1
+r1
+31
+R2
+n@twenty_@bit_@reg
+!s100 5_[5[`4K`hTc8Tdinl1m81
+!s85 0
