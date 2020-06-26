@@ -20,11 +20,11 @@ assign b = src_out[7:0];
 assign sel = src_out[18:16];
 assign addr = src_out[21:19];
 
-Spi_Ctrl spi_ctrl(.spi_en(SPI_en), .spi_clk(SPI_clk), .spi_wdata(SPI_wdata), .aluop_st(aluop_st), .rst(rst), .spi_out(spi_out), .alu_en(alu_en), .mac_en(mac_en), .cap_en(source_cap_en));
-Source_Reg source_reg(.clk(clk), .wdata(spi_out), .cap_en(source_cap_en), .alu_en(alu_en), .out_data(src_out) );
+Spi_Ctrl spi_ctrl(.spi_en(SPI_en), .spi_clk(SPI_clk), .spi_wdata(SPI_wdata), .aluop_st(aluop_st), .macop_st(macop_st), .rst(rst), .spi_out(spi_out), .alu_en(alu_en), .mac_en(mac_en), .cap_en(source_cap_en));
+// Source_Reg source_reg(.clk(clk), .wdata(spi_out), .cap_en(source_cap_en), .alu_en(alu_en), .out_data(src_out) );
 Source_Reg source_reg1(.clk(clk), .wdata(spi_out), .cap_en(source_cap_en), .alu_en(mac_en), .out_data(src_out) );
-ALU alu(.clk(clk),.addr(addr), .a(a), .b(b), .sel(sel), .alu_en(alu_en), .out(alu_data_out), .out_addr(alu_addr_out));
+// ALU alu(.clk(clk),.addr(addr), .a(a), .b(b), .sel(sel), .alu_en(alu_en), .out(alu_data_out), .out_addr(alu_addr_out));
 MAC mac( .clk(clk), .addr(addr), .a(a), .b(b),.mac_en(mac_en), .out(mac_out), .out_addr(mac_addr_out));
-Destination_Reg dest_reg(.cap_en(alu_en), .wdata(alu_data_out), .addr(alu_addr_out), .clk(clk), .reg_0(ans0), .reg_1(ans0), .reg_2(ans0), .reg_3(ans0) , .reg_4(ans0), .reg_5(ans0), .reg_6(ans0) , .reg_7(ans0));
+// Destination_Reg dest_reg(.cap_en(alu_en), .wdata(alu_data_out), .addr(alu_addr_out), .clk(clk), .reg_0(ans0), .reg_1(ans0), .reg_2(ans0), .reg_3(ans0) , .reg_4(ans0), .reg_5(ans0), .reg_6(ans0) , .reg_7(ans0));
 Destination_Reg16 dest16(.cap_en(mac_en), .wdata(mac_out), .addr(mac_addr_out), .clk(clk) );
 endmodule // Sbapd
